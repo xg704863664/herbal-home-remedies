@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://xg704863664.github.io/herbal-home-remedies/sitemap.xml
+Sitemap: https://xg704863664.github.io/sitemap.xml
