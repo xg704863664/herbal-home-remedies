@@ -177,3 +177,34 @@ tbody tr:nth-child(even) td { background: color-mix(in srgb, var(--bg) 60%, var(
   h2 { page-break-after: avoid; }
   table { font-size: 10pt; }
 }
+
+/* ---------- guide list (hub) ---------- */
+.guide-list { list-style: none; padding: 0; }
+.guide-list li { margin: 0 0 1.1rem; padding-bottom: 0.9rem; border-bottom: 1px solid var(--rule); }
+.guide-list li:last-child { border-bottom: 0; }
+.guide-list a { text-decoration: none; font-size: 1.04rem; }
+.guide-list a:hover { text-decoration: underline; }
+.guide-list .d { display: block; color: var(--muted); font-size: 0.92rem; margin-top: 0.15rem; }
+
+/* ---------- interactive calculators ---------- */
+.calc { background: var(--card); border: 1px solid var(--rule); border-radius: var(--radius); padding: 1.2rem 1.3rem; margin: 1.8rem 0; }
+.calc-row { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.7rem; flex-wrap: wrap; }
+.calc-row label { flex: 0 0 9rem; color: var(--ink-soft); font-size: 0.95rem; }
+.calc-row input, .calc-row select { font: inherit; font-size: 1rem; padding: 0.4rem 0.55rem; border: 1px solid var(--rule); border-radius: 6px; background: var(--bg); color: var(--ink); width: 7rem; }
+.calc-row select { width: auto; }
+.calc-btn { font: inherit; font-size: 1rem; padding: 0.5rem 1.1rem; border: 0; border-radius: 6px; background: var(--accent); color: #fff; cursor: pointer; margin-top: 0.3rem; }
+.calc-btn:hover { background: var(--accent-ink); }
+.calc-out { margin-top: 1.1rem; }
+.calc-out table { margin: 0; }
+.calc-out th { width: 40%; }
+@media (max-width: 620px) {
+  .calc-row label { flex: 0 0 100%; }
+  .calc-row input { width: 100%; }
+}
+
+/* 相关指南（构建时自动生成） */
+.related { margin: 2.2rem 0 0; padding-top: 1.4rem; border-top: 1px solid var(--line, #e3e3e3); }
+.related h2 { font-size: 1.05rem; margin: 0 0 .7rem; }
+.related ul { list-style: none; padding: 0; margin: 0; display: grid; gap: .45rem; }
+.related li a { display: block; padding: .5rem .7rem; border: 1px solid var(--line, #e3e3e3); border-radius: 6px; text-decoration: none; }
+.related li a:hover { border-color: var(--accent, #2f6f4e); }
